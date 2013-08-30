@@ -21,6 +21,22 @@ textarea {
     font-family: "monoton";
     src: url(../fonts/monoton.ttf) format("truetype");
 }
+@font-face{
+      font-family: "arimo";
+    src: url(../fonts/Arimo-Regular.ttf) format("truetype");
+}
+@font-face{
+     font-family: "arimo_i";
+    src: url(../fonts/Arimo-Italic.ttf) format("truetype");
+}
+@font-face{
+         font-family: "arimo_bi";
+    src: url(../fonts/Arimo-BoldItalic.ttf) format("truetype");
+}
+@font-face{
+    font-family: "arimo_b";
+    src: url(../fonts/Arimo-Bold.ttf) format("truetype");
+}
 html {
     font-size: 1em;
     line-height: 1.4;
@@ -105,6 +121,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
+  font-family: 'arimo-b', Verdana;
   position: absolute;
   top:0;
   height: 100%;
@@ -126,7 +143,9 @@ nav{
 footer{
   position: fixed;
   bottom:0;
-  background: white;
+  background: rgba(254,254,254,0.6);
+  /*background: rgba(215,40,40,0.1);*/
+  /*border-top: rgba(215,40,40,0.9) solid 2px;*/
 }
 nav > ul{
   width:auto;
@@ -182,13 +201,16 @@ section.home > form > input{
   width:600px;
   height: 80px;
 }
+section.home > form > input:hover{
+  background: rgba(215,40,40,0.9);
+}
 section.home > form > input.goleft{
   margin:5px 0 0 -5px;
 }
 section.home > form > input.login,
 section.home > form > input.signup{
   color:white;
-  background: none;
+  background: rgba(21,21,21,0.3);
   border:2px solid white;
   width: 200px; height: 40px;
   position: relative;
